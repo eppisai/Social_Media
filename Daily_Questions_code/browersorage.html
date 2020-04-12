@@ -43,6 +43,13 @@
 
                 location.reload();
             }
+            alert("type localstorage in console, to see the data in local storage ");
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                IsOutput.innerHtml += `${key}: ${value}<br/>`;
+
+            }
         }
     </script>
 
