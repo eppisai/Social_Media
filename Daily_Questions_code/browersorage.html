@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The fieldset element</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal details:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <button type="button" id="btnInsert">Insert data</button>
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend> Local storage</legend>
+        <div id="IsOutput"></div>
+    </fieldset>
+    <script type="text/javascript">
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const email = document.getElementById("email");
+        const birthday = document.getElementById("birthday");
+        const btn = document.getElementById("btnInsert");
+        const output = document.getElementById("IsOutput");
+
+        btn.onclick = function () {
+            const fn = fname.value;
+            const ln = lname.value;
+            const em = email.value;
+            const bt = birthday.value;
+            if (fn && ln && em && bt) {
+                localStorage.setItem("name", fn);
+                localStorage.setItem("email", em);
+                localStorage.setItem("birthday", bt);
+
+                location.reload();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
