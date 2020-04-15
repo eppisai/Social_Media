@@ -21,3 +21,9 @@ body{
      font-weight: 400;
     -webkit-font-smoothing: antialiased; 
    }
+   .blurred-box{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 125px);
