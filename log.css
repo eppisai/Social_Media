@@ -27,3 +27,7 @@ body{
     height: 350px;
     top: calc(50% - 175px);
     left: calc(50% - 125px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+  }
