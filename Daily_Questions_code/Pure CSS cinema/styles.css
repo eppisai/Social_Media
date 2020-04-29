@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cinema-container {
+    background-color: rgb(126, 17, 17);
+    width: 1200px;
+    height: 950px;
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  
+  overflow: hidden;
+  background-image: url(https://clipartstation.com/wp-content/uploads/2017/11/kinosaal-clipart-8.jpg);
+  background-size: cover;
+}
+
+
+
+
+.ceiling {
+  
+   
+    width: 1200px;
+    height: 200px;
+    border-radius: 15%;
+    position: absolute;
+    top: -50px;
+    z-index: 7;
+    background: rgb(115,67,67);
+background: radial-gradient(circle, rgba(115,67,67,1) 0%, rgba(62,38,38,1) 52%, rgba(29,15,15,1) 100%);
+  
+}
+
+.wall {
+    
+    background-color: #2B1603;
+    width: 1200px;
+    height: 575px;
+    z-index: 2;
+    position: absolute;
+    top: 145px;
+    background: rgb(220,255,255);
+background: linear-gradient(0deg, rgba(220,255,255,1) 0%, rgba(43,22,3,1) 0%, rgba(17,8,1,1) 100%);
+}
+
+.ground {
+    
+    background-color: #613D23;
+    width: 1200px;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+    bottom: 150px;
+    background: rgb(220,255,255);
+background: linear-gradient(0deg, rgba(220,255,255,1) 0%, rgba(97,61,35,1) 0%, rgba(69,44,25,1) 53%, rgba(51,32,18,1) 100%);
+}
+
+.seat-container {
+    
+    background-color: #331B03;
+    width: 1200px;
+    height: 150px;
+   
+    position: absolute;
+    bottom: 0px;
+}
+
+.curtain1 {
+    
+    background-color: #B20614;
+    width: 600px;
+    height: 630px;
+  
+    position: absolute;
+    bottom: 190px; 
+    left:0px;
+    z-index: 5;
+    background-image: linear-gradient(90deg, transparent 50%,
+  rgba(5, 5, 5, 0.5)0%);
+background-size: 50px 50px;
+-webkit-box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+-moz-box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+animation: curtainleftmove 10s;
+animation-fill-mode: forwards;
+animation-delay: 5s;
+}
+
+
+@keyframes curtainleftmove {
+    from {left: 0px;}
+    to {left: -480px;}
+  }
+.curtain2 {
+   
+    background-color: #B20614;
+    width: 600px;
+    height: 630px;
+
+    position: absolute;
+    bottom: 190px; 
+    right:0px;
+    z-index: 5;
+  
+background-image: linear-gradient(90deg, transparent 50%,
+  rgba(5, 5, 5, 0.5)0%);
+background-size: 50px 50px;
+-webkit-box-shadow: -16px 23px 25px 15px rgba(0,0,0,0.54);
+-moz-box-shadow: -16px 23px 25px 15px rgba(0,0,0,0.54);
+box-shadow: -16px 23px 25px 15px rgba(0,0,0,0.54);
+animation: curtainrightmove 10s;
+animation-fill-mode: forwards;
+animation-delay: 5s;
+}
+@keyframes curtainrightmove {
+    from {right: 0px;}
+    to {right: -480px;}
+  }
+
+.screen {
+    
+    background: black;
+    width: 830px;
+    height: 420px;
+    z-index: 4;
+    position: absolute;
+    top: 200px;
+    left: 180px; 
+    -webkit-box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+-moz-box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+box-shadow: 14px 23px 25px 15px rgba(0,0,0,0.54);
+animation-name: screenon;
+animation-duration: 7s;
+animation-delay: 19s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in;
+overflow: hidden;
+}
+
+@keyframes screenon {
+    from {background: black;}
+    to {background: rgb(207, 207, 207);box-shadow: 21px 35px 60px 64px rgba(255, 255, 255, 0.2);   }
+   
+  }
+
+.chair {
+    background: rgb(220,255,255);
+    background: linear-gradient(0deg, rgba(220,255,255,1) 0%, rgba(43,22,3,1) 0%, rgba(83,10,10,1) 24%, rgba(117,13,13,1) 100%);
+    width: 220px;
+    height: 100px;
+    
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    border-radius: 20%;
+    border-top: 20px solid rgb(161, 39, 39);
+    border-left: 20px solid rgb(141, 24, 24);
+    border-right: 20px solid rgb(141, 24, 24);
+    border-bottom: 20px solid #331B03;
+
+}
+
+.chair1 {
+    z-index: 5;
+}
+
+.chair2 {
+    position: absolute;
+    bottom: -40px;
+    left: 300px;
+    z-index: 5;
+}
+
+.chair3 {
+    position: absolute;
+    bottom: -40px;
+    left: 600px;
+    z-index: 5;
+}
+
+
+.chair4 {
+    position: absolute;
+    bottom: -40px;
+    left: 900px;
+    z-index: 5;
+}
+
+
+.chair5 {
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+    height: 80px;
+}
+
+.chair6 {
+    position: absolute;
+    bottom: 20px;
+    left: 450px;
+    height: 80px;
+}
+
+.chair7 {
+    position: absolute;
+    bottom: 20px;
+    left: 750px;
+    height: 80px;
+}
+
+.chair8 {
+    position: absolute;
+    bottom: 20px;
+    left: 1050px;
+    height: 80px;
+}
+.chair9 {
+    position: absolute;
+    bottom: 20px;
+    left: -200px;
+    height: 80px;
+}
+
+
+.light {
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(245, 244, 201);
+    z-index: 12;
+    position: absolute;
+    top: 50px;
+    left: 460px;
+    animation-name: dimlight;
+    animation-duration: 4s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dimlight {
+    from {background-color: rgb(245, 244, 201);}
+    to {background-color: rgb(83, 83, 78);}
+   
+  }
+
+.light2 {
+    position: absolute;
+    top: 80px;
+    left: 590px;
+}
+
+.light3 {
+    position: absolute;
+    top: 50px;
+    left: 720px;
+}
+
+.layer{
+    background-color: rgba(235, 241, 179,0.1);
+    width: 1200px;
+    height: 950px;
+  position: absolute;
+  z-index: 20;
+  animation-name: dim;
+  animation-duration: 4s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+@keyframes dim {
+    from {background-color: rgba(235, 241, 179,0.1);}
+    to {background-color: rgba(0, 0, 0, 0.2);}
+   
+  }
+
+
+
+
+ .three {
+     font-size: 10rem;
+     color:rgba(0, 0, 0,0);
+     position: absolute;
+     top: 110px;
+     left: 370px;
+     animation-name: countstart;
+animation-duration: 1.5s;
+animation-delay: 22s;
+animation-fill-mode: forwards;
+z-index: 7;
+ }
+
+
+  
+ .two {
+    font-size: 10rem;
+    color:rgba(0, 0, 0,0);
+    position: absolute;
+    top: 110px;
+    left: 365px;
+    animation-name: countstart;
+animation-duration: 1.5s;
+animation-delay: 23.5s;
+animation-fill-mode: forwards;
+z-index: 7;
+}
+
+
+ .one {
+    font-size: 10rem;
+    color:rgba(0, 0, 0,0);
+    position: absolute;
+    top: 110px;
+    left: 365px;
+    animation-name: countstart;
+animation-duration: 1.5s;
+animation-delay: 25s;
+animation-fill-mode: forwards;
+z-index: 7;
+}
+
+@keyframes countstart {
+   0% {color:rgba(0, 0, 0,0);}
+   50% {color:rgba(0, 0, 0,1); }
+   100% {color:rgba(0, 0, 0,0);}
+ }
+
+
+
+ .circle-inner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0,0);
+    position: absolute;
+    top: 110px;
+    left: 310px;
+    animation-name: circlestart;
+animation-duration: 1s;
+animation-delay: 22s;
+animation-fill-mode: forwards;
+z-index: 6;
+}
+
+
+.circle-outer {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0,0);
+      position: absolute;
+      top: 90px;
+      left:290px;
+      animation-name: circlestart;
+  animation-duration: 1s;
+  animation-delay: 22s;
+  animation-fill-mode: forwards;
+  z-index: 6;
+  }
+
+@keyframes circlestart {
+   0% {border: 3px solid rgba(255, 255, 255, 0); background-color:  rgba(255, 255, 255, 0); }
+  
+   100% {border: 3px solid rgb(255, 255, 255);background-color:  rgba(255, 255, 255, 0.2); }
+ }
+
+
+ .line1 {
+    width: 830px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 220px;
+    left:0px;
+    z-index: 5;
+ }
+
+ 
+ .line2 {
+    width: 1px;
+    height: 420px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:415px;
+    z-index: 5;
+ }
+
+
+ .screen2 {
+    
+    background: rgba(255, 255, 255,0);
+    width: 830px;
+    height: 420px;
+    z-index: 10;
+    position: absolute;
+  overflow: hidden;
+animation-name: screen2;
+animation-duration: 3s;
+animation-delay: 27s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in;
+}
+
+
+@keyframes screen2 {
+    0% { background-color:  rgba(255, 255, 255, 0); }
+   
+    100% {background-color:  rgb(134, 105, 138); }
+  }
+ 
+
+.wool {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.wool1 {
+    position: absolute;
+    bottom: 150px;
+    left:290px;
+}
+
+.wool2 {
+    position: absolute;
+    bottom: 110px;
+    left:320px;
+}
+
+.wool3 {
+    position: absolute;
+    bottom: 180px;
+    left:320px;
+}
+
+.wool4 {
+    position: absolute;
+    bottom: 180px;
+    left:370px;
+}
+
+.wool5 {
+    position: absolute;
+    bottom: 110px;
+    left:370px;
+}
+.wool6 {
+    position: absolute;
+    bottom: 150px;
+    left:400px;
+}
+
+.head {
+    display: block;
+    width: 60px;
+    height:  80px;
+    background-color: black;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    bottom: 160px;
+    left:365px;
+  }
+
+  .ear1 {
+    display: block;
+    width: 20px;
+    height:  50px;
+    background-color: black;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    bottom: 190px;
+    left:415px;
+    transform: rotate(-120deg);
+  }
+
+  .ear2 {
+    display: block;
+    width: 20px;
+    height:  50px;
+    background-color: black;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    bottom: 190px;
+    left:355px;
+    transform: rotate(120deg);
+  }
+
+  .leg1 {
+    
+    width: 20px;
+    height:  40px;
+    background-color: black;
+    z-index: 5;
+    position: absolute;
+    bottom: 70px;
+    left:355px;
+    transform: rotate(10deg);
+  }
+
+  .leg2 {
+    
+    width: 20px;
+    height:  40px;
+    background-color: black;
+    z-index: 5;
+    position: absolute;
+    bottom: 70px;
+    left:425px;
+    transform: rotate(-10deg);
+  }
+
+
+  .sign {
+    
+    width: 180px;
+    height: 100px;
+    background-color: rgb(80, 46, 95);
+    z-index: 5;
+    position: absolute;
+    bottom: -10px;
+    left:310px;
+  
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+
+  .sheep {
+    position: absolute;
+    bottom: -400px;
+    left:25px;
+    -webkit-animation: sheepMove 10s linear;
+    animation-delay: 27s;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes sheepMove {
+    0% { transform: translateY(0px) ; }
+  
+    100% { transform:translateY(-450px);}
+  }
+  
