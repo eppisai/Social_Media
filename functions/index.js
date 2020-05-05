@@ -8,7 +8,7 @@ app.use(cors());
 const { db } = require('./util/admin');
 
 const {
-    getAllScreams,
+     getAllScreams,
     postOneScream,
     getScream,
     commentOnScream,
